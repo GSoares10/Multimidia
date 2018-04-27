@@ -1,0 +1,66 @@
+.flex-container {
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {
+    background: black;
+    color:white;
+    font-size: 250%;
+}
+footer {
+    background: #aaa;
+    color:white;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0%
+
+}
+#list {
+    background:#eee;
+}
+
+@media all and (min-width: 768px) {
+    #list {
+        margin-block-start: 5cm;
+        text-align:left;
+        -webkit-flex: 1 auto;
+        flex:1 auto;
+        -webkit-order:1;
+        order:1;
+    }
+
+    .article {
+        -webkit-flex:5 0px;
+        flex:5 0px;
+        -webkit-order:2;
+        order:2;
+    }
+    footer {
+        -webkit-order:3;
+        order:3;
+    }
+}
+
+footer{
+    text-align: center;
+    position: relative;
+    -webkit-box-align: center;
+}
+
+h4 {
+    font-size: 250%;
+}
